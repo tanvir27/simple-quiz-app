@@ -2,7 +2,12 @@
   {
     "id": 1,
     "question": "What is the largest planet in our solar system?",
-    "options": ["Mars", "Jupiter", "Venus", "Saturn"],
+    "options": [
+      "Mars",
+      "Jupiter",
+      "Venus",
+      "Saturn"
+    ],
     "answer": "Jupiter",
     "description": "Jupiter is the largest planet in our solar system, with a diameter of 139,822 kilometers. It is a gas giant and has a large number of moons."
   },
@@ -45,7 +50,12 @@
   {
     "id": 5,
     "question": "Which programming language is commonly used for building web applications?",
-    "options": ["Java", "Python", "JavaScript", "C++"],
+    "options": [
+      "Java",
+      "Python",
+      "JavaScript",
+      "C++"
+    ],
     "answer": "JavaScript",
     "description": "JavaScript is a programming language commonly used for building web applications, particularly for front-end web development. It is used to add interactivity, animations, and dynamic behavior to web pages."
   },
