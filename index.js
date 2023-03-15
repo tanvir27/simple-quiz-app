@@ -47,9 +47,8 @@ startQuiz.addEventListener("click", () => {
 const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
   const data = await res.json();
-  const quizData = data;
-  displayQuiz(quizData);
-  // console.log(data);
+  quizData = data;
+  displayQuiz(data);
 };
 
 // Displaying quiz on quiz page
@@ -59,8 +58,8 @@ const displayQuiz = (data) => {
     return;
   }
 
-  
   data.forEach((quiz, i) => {
+   const quizContainer= document.getElementById('quizContainer')
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
     <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
@@ -187,7 +186,6 @@ document.querySelector("#submit").addEventListener("click", () => {
 });
 
 // blog page open when click blog button
-
 function redirectToBlogPage() 
 {
   window.location.href = "blog.html";
