@@ -63,7 +63,7 @@ const displayQuiz = (data) => {
    const quizContainer= document.getElementById('quizContainer')
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
-    <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
+    <div class="h-8 w-8 bg-purple-300 rounded-full flex justify-center items-center text-purple-800 mr-3">
       ${i + 1}
     </div>
     <p class="text-gray-800 text-sm">${quiz.question}</p>
@@ -82,7 +82,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
   quizTimer(true);
   answersContainer.innerHTML = `<div class="my-4">
-  <i class="fa-solid fa-fan animate-spin text-2xl text-green-600"></i>
+  <i class="fa-solid fa-fan animate-spin text-2xl text-purple-600"></i>
   <p class="text-xs animate-pulse">Please Wait, We are checking...</p>
 </div>`;
   let timeTaken = document.querySelector("#count");
@@ -100,7 +100,7 @@ document.querySelector("#submit").addEventListener("click", () => {
 
   if (totalMark === 60) {
     grade.status = "Excellent";
-    grade.color = "text-green-600";
+    grade.color = "text-purple-600";
   } else if (totalMark >= 40 && totalMark < 60) {
     grade.status = "Good";
     grade.color = "text-orange-600";
@@ -154,7 +154,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     </p>
   </div>
   
-  <button onclick="location.reload();" class="bg-green-600 text-white w-full py-2 rounded mt-16">Restart</button>
+  <button onclick="location.reload();" class="bg-purple-600 text-white w-full py-2 rounded mt-16">Restart</button>
   ${
     storage
       ? `<div class="mt-5">
